@@ -1,2 +1,85 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+@import url("https://fonts.googleapis.com/css?family=Arimo");
+.body {
+    font-family: "Roboto";
+}
+nav {
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+}
+.top-menu {
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 3px 0 7px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+}
+.top-menu:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.navbar-logo {
+    display: inline-block;
+}
+.menu-main {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    float: right;
+}
+.menu-main li {
+    display: inline-block;
+}
+.menu-main a {
+    text-decoration: none;
+    display: block;
+    position: relative;
+    line-height: 61px;
+    padding-left: 20px;
+    font-size: 18px;
+    letter-spacing: 2px;
+    font-family: "Arimo", sans-serif;
+    font-weight: bold;
+    color: #3d3d3d;
+    transition: 0.3s linear;
+}
+.menu-main a:hover:before {
+    opacity: 1;
+}
+
+.history {
+    min-height: 800px;
+    background: url("/Project/img/Kross.jpg") center (center / cover) no-repeat;
+    padding: 150px 0 135px 0;
+
+    &_header {
+        color: #fff;
+        font-weight: 700;
+        text-transform: uppercase;
+        font-size: 60px;
+        line-height: 60px;
+        margin: 0;
+        text-align: center;
+    }
+
+    &_subheader {
+        color: #fff;
+        font-weight: 700;
+        text-transform: uppercase;
+        font-size: 36px;
+        line-height: 36px;
+        margin: 0;
+        margin-top: 22px;
+        text-align: center;
+    }
+
+    &_descr {
+        color: #fff;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 24px;
+        text-align: center;
+        margin-top: 23px;
+    }
+}
