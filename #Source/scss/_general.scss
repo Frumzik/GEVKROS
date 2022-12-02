@@ -82,102 +82,128 @@ nav {
     }
 }
 
-$var1: #ffffff;
-$var2: #000000;
-$var3: #1eacc7;
-$var4: #ff5656;
+
 
 .mobile {
-	min-height: 864px;
-	padding: 48px 0 79px 0;
-	background: url("/fonts/Подложка.png") center (center / cover) no-repeat;
-	.row {
-		margin-top: 32px;
-	}
-	&_item {
-		position: relative;
-		width: 320px;
-		height: 280px;
-		margin: 0 auto;
-		margin-bottom: 19px;
-		padding-top: 92px;
-        &_1 {
-            background: url("/Project/img/reasons/asics_1.jpg") 0 0 no-repeat;
-        }
+    min-height: 864px;
+    padding: 48px 0 79px 0;
+    background: url("../img/bg/mobile_app.png") center center/cover no-repeat;
+}
+.mobile .row {
+    margin-top: 32px;
+}
+.mobile_item {
+    position: relative;
+    width: 320px;
+    height: 280px;
+    margin: 0 auto;
+    margin-bottom: 19px;
+    padding-top: 92px;
+}
+.mobile_item_1 {
+    background: url("/Project/img/reasons/asics_3.jpg") center center/cover no-repeat;
+}
+.mobile_item_2 {
+    background: url("/Project/img/reasons/asics_2.jpg") center center/cover no-repeat;
+}
+.mobile_item_3 {
+    background: url("/Project/img/reasons/asics_1.jpg") center center/cover no-repeat;
+}
+.mobile_item_4 {
+    background: url("/Project/img/reasons/asics_3.jpg") center center/cover no-repeat;
+}
+.mobile_item_5 {
+    background: url("/Project/img/reasons/asics_2.jpg") center center/cover no-repeat;
+}
+.mobile_item_6 {
+    background: url("/Project/img/reasons/asics_3.jpg") center center/cover no-repeat;
+}
+.mobile_item_subtitle {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 31px;
+    text-transform: uppercase;
+    text-align: center;
+}
+.mobile_item_plus {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: absolute;
+    bottom: 35px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    width: 26px;
+    height: 26px;
+    background-color: #000000;
+    margin: 0 auto;
+    border-radius: 100%;
+    cursor: pointer;
+}
+.mobile_item_plus:before {
+    content: "";
+    display: block;
+    width: 14px;
+    height: 2px;
+    background-color: #1eacc7;
+    -webkit-transition: 0.3s all;
+    transition: 0.3s all;
+}
+.mobile_item_plus:after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    display: block;
+    height: 14px;
+    width: 2px;
+    background-color: #1eacc7;
+    -webkit-transition: 0.3s all;
+    transition: 0.3s all;
+}
+.mobile_item_plus:hover:before,
+.mobile_item_plus:hover:after {
+    background-color: #ff5656;
+}
+.label {
+    position: relative;
+    margin: 0 auto;
+    height: 24px;
+    width: 112px;
+    padding: 5px 12px;
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 11px;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: center;
 
-        &_2 {
-            background: url("/Project/img/reasons/asics_2.jpg") 0 0 no-repeat;
-        }
-
-        &_3 {
-            background: url("/Project/img/reasons/asics_3.jpg") 0 0 no-repeat;
-        }
-
-        &_4 {
-            background: url("/Project/img/reasons/asics_1.jpg") 0 0 no-repeat;
-        }
-
-        &_5 {
-            background: url("/Project/img/reasons/asics_2.jpg") 0 0 no-repeat;
-        }
-
-        &_6 {
-            background: url("/Project/img/reasons/asics_3.jpg") 0 0 no-repeat;
-        }
-		&_subtitle {
-			color: $var1;
-			font-size: 24px;
-			font-weight: 400;
-			line-height: 31px;
-			text-transform: uppercase;
-			text-align: center;
-		}
-		&_plus {
-			display: -webkit-box;
-			display: -ms-flexbox;
-			display: flex;
-			-webkit-box-pack: center;
-			-ms-flex-pack: center;
-			justify-content: center;
-			-webkit-box-align: center;
-			-ms-flex-align: center;
-			align-items: center;
-			position: absolute;
-			bottom: 35px;
-			left: 50%;
-			-webkit-transform: translateX(-50%);
-			transform: translateX(-50%);
-			width: 26px;
-			height: 26px;
-			background-color: $var2;
-			margin: 0 auto;
-			border-radius: 100%;
-			cursor: pointer;
-			&:before {
-				content: "";
-				display: block;
-				width: 14px;
-				height: 2px;
-				background-color: $var3;
-				-webkit-transition: 0.3s all;
-				transition: 0.3s all;
-			}
-			&:after {
-				content: "";
-				position: absolute;
-				left: 50%;
-				-webkit-transform: translateX(-50%);
-				transform: translateX(-50%);
-				display: block;
-				height: 14px;
-				width: 2px;
-				background-color: $var3;
-				-webkit-transition: 0.3s all;
-				transition: 0.3s all;
-			}
-			&:hover:before, &:hover:after {
-				background-color: $var4;
-			}
-		}
-	}
+}
+.subtitle {
+    position: relative;
+    margin-top: 19px;
+    color: #222222;
+    font-size: 17px;
+    font-weight: 400;
+    text-align: center;
+}
+.title {
+    position: relative;
+    margin-bottom: 0;
+    margin-top: 38px;
+    color: #222222;
+    font-size: 38px;
+    line-height: 38px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
 }
