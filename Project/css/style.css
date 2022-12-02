@@ -1,0 +1,243 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Arimo");
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+.body {
+  font-family: "Roboto";
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+}
+
+.top-menu {
+  background: rgb(255, 255, 255);
+  -webkit-box-shadow: 3px 0 7px rgba(0, 0, 0, 0.3);
+          box-shadow: 3px 0 7px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+}
+
+.top-menu:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.navbar-logo {
+  display: inline-block;
+}
+
+.menu-main {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  float: right;
+}
+
+.menu-main li {
+  display: inline-block;
+}
+
+.menu-main a {
+  text-decoration: none;
+  display: block;
+  position: relative;
+  line-height: 61px;
+  padding-left: 20px;
+  font-size: 18px;
+  letter-spacing: 2px;
+  font-family: "Arimo", sans-serif;
+  font-weight: bold;
+  color: #3d3d3d;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
+}
+
+.menu-main a:hover:before {
+  opacity: 1;
+}
+
+.history {
+  min-height: 800px;
+  background: url("/Project/img/Kross.jpg") center center/cover no-repeat;
+  padding: 150px 0 135px 0;
+}
+.history_header {
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 60px;
+  line-height: 60px;
+  margin: 0;
+  text-align: center;
+}
+.history_subheader {
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 36px;
+  line-height: 36px;
+  margin: 0;
+  margin-top: 22px;
+  text-align: center;
+}
+.history_descr {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  margin-top: 23px;
+}
+
+.mobile {
+  min-height: 864px;
+  padding: 48px 0 79px 0;
+  background: url("../img/bg/mobile_app.png") center center/cover no-repeat;
+}
+.mobile .row {
+  margin-top: 32px;
+}
+.mobile_item {
+  position: relative;
+  width: 320px;
+  height: 280px;
+  margin: 0 auto;
+  margin-bottom: 19px;
+  padding-top: 92px;
+}
+.mobile_item_1 {
+  background: url("/Project/img/reasons/asics_3.jpg") center center/cover no-repeat;
+}
+.mobile_item_2 {
+  background: url("/Project/img/reasons/asics_2.jpg") center center/cover no-repeat;
+}
+.mobile_item_3 {
+  background: url("/Project/img/reasons/asics_1.jpg") center center/cover no-repeat;
+}
+.mobile_item_4 {
+  background: url("/Project/img/reasons/asics_3.jpg") center center/cover no-repeat;
+}
+.mobile_item_5 {
+  background: url("/Project/img/reasons/asics_2.jpg") center center/cover no-repeat;
+}
+.mobile_item_6 {
+  background: url("/Project/img/reasons/asics_3.jpg") center center/cover no-repeat;
+}
+.mobile_item_subtitle {
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 31px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.mobile_item_plus {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: absolute;
+  bottom: 35px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  width: 26px;
+  height: 26px;
+  background-color: #000000;
+  margin: 0 auto;
+  border-radius: 100%;
+  cursor: pointer;
+}
+.mobile_item_plus:before {
+  content: "";
+  display: block;
+  width: 14px;
+  height: 2px;
+  background-color: #1eacc7;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+}
+.mobile_item_plus:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  display: block;
+  height: 14px;
+  width: 2px;
+  background-color: #1eacc7;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+}
+.mobile_item_plus:hover:before,
+.mobile_item_plus:hover:after {
+  background-color: #ff5656;
+}
+.label {
+  position: relative;
+  margin: 0 auto;
+  height: 24px;
+  width: 112px;
+  padding: 5px 12px;
+  background-color: #000000;
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: 300;
+  text-transform: uppercase;
+  text-align: center;
+
+}
+.title {
+  position: relative;
+  margin-bottom: 0;
+  margin-top: 38px;
+  color: #222222;
+  font-size: 38px;
+  line-height: 38px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+
+}
+.subtitle {
+  position: relative;
+  margin-top: 19px;
+  color: #222222;
+  font-size: 17px;
+  font-weight: 400;
+  text-align: center;
+
+}
+@media (max-width: 660px) {
+  .menu-main {
+    float: none;
+    padding-top: 20px;
+  }
+  .top-menu {
+    text-align: center;
+    padding: 20px 0 0 0;
+  }
+  .menu-main a {
+    padding: 0 10px;
+  }
+  .menu-main a:before {
+    -webkit-transform: rotate(45deg) translateX(-6px);
+            transform: rotate(45deg) translateX(-6px);
+  }
+}
+@media (max-width: 600px) {
+  .menu-main li {
+    display: block;
+  }
+}

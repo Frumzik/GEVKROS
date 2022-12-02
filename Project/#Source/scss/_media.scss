@@ -1,0 +1,21 @@
+@media (max-width: 660px) {
+    .menu-main {
+        float: none;
+        padding-top: 20px;
+    }
+    .top-menu {
+        text-align: center;
+        padding: 20px 0 0 0;
+    }
+    .menu-main a {
+        padding: 0 10px;
+    }
+    .menu-main a:before {
+        transform: rotate(45deg) translateX(-6px);
+    }
+}
+@media (max-width: 600px) {
+    .menu-main li {
+        display: block;
+    }
+}
